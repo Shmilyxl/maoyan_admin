@@ -1,0 +1,43 @@
+<div class="col-md-12">
+    <h1 class="page-head-line">Basic Forms</h1>
+    <h1 class="page-subhead-line">This is dummy text , you can replace it with your original text. </h1>
+
+</div>
+</div>
+<!-- /. ROW  -->
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                更新数据
+            </div>
+            <div class="panel-body">
+                <form role="form" id="update_from" enctype="multipart/form-data">
+                    <div class=" form-group">
+                        <label>图片</label>
+                        <div><img style="width: 60px; height: 60px;" src="http://localhost:3000/uploads/{{item.moviesLogo}}" alt=" "></div>
+                        <input class="form-control" type="file" id="movielogo" name="moviesLogo" placeholder="请选择电影Logo">
+                    </div>
+                    <div class="form-group">
+                        <label>电影名</label>
+                        <input class="form-control" type="text" name="moviesName" value="{{item.moviesName}}">
+                    </div>
+                    <div class="form-group ">
+                        <label>观众评</label>
+                        <input class="form-control " type="text" name="moviesreview" value="{{item.moviesreview}}">
+                    </div>
+                    <div class=" form-group ">
+                        <label>主演</label>
+                        <input class="form-control " type="text " name="actors" value="{{item.actors}}">
+                    </div>
+                    <div class="form-group ">
+                        <label>今日场次</label>
+                        <input class="form-control " type="text " name="moviestime" value="{{item.moviestime}}">
+                    </div>
+                    <button type="submit" class="btn btn-info " id="u_btn">更新 Message </button>
+                    <input type="hidden" name='id' value={{item._id}}>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+<div class="panel panel-default">
+
+    <div class="panel-heading">
+        <div id="l-heading" style="height: 20px;"></div>
+        热映电影
+        <button type="button" class="btn btn-sm btn-success" id="add_btn">添加数据</button>
+
+        <div class="col-md-6" style="float: right;">
+            <input class="form-control" id="search" placeholder="输入需要查找的内容" type="text" />
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            {{if list.length===0}}
+            <table>
+                <tr>
+                    <td>
+                        暂无数据
+                    </td>
+                </tr>
+            </table>
+            {{else}}
+            <table class="table">
+
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <!-- <th></th> -->
+                        <th>电影名</th>
+                        <th>观众评</th>
+                        <th>主演</th>
+                        <th>今日播放</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody style="line-height:76px ;">
+                    {{each list}}
+                    <tr class="success">
+                        <td><img style="height: 60px;" src="http://localhost:3000/uploads/{{$value.moviesLogo}}" alt=""></td>
+                        <td>{{$value.moviesName}}</td>
+                        <td>{{$value.moviesreview}}</td>
+                        <td>{{$value.actors}}</td>
+                        <td>{{$value.moviestime}}</td>
+                        <td> <button type="button" class="update_btn btn btn-xs btn-default" data-id="{{$value._id}}">更新</button><br>
+                            <button type="button" class="danger_btn btn btn-xs btn-danger" data-id="{{$value._id}}" data-img="{{$value.moviesLogo}}" style="margin-top: 5px;">删除</button>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            {{/if}} {{if list.length>0}}
+            <div id="box-footer" class="box-footer clearfix">
+                <ul class="pagination pagination-sm no-margin pull-right">
+                    <li><a href="javascript:void(0)" class="page-prev">&laquo;</a></li>
+                    {{each pageCount}} {{if currentPage === $value}}
+                    <li class="active">
+                        {{else}}
+                        <li>
+                            {{/if}}
+                            <a class="page-number">{{$value}}</a></li>
+                        {{/each}}
+                        <li><a href="javascript:void(0)" class="page-next">&raquo;</a></li>
+                </ul>
+            </div>
+        </div>
+        {{/if}}
+    </div>
+</div>

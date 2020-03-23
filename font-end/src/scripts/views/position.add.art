@@ -1,0 +1,36 @@
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="panel panel-danger">
+        <div class="panel-body">
+            <form role="form" id="form_add" method="post" action="/api/position" enctype="multipart/form-data">
+                <div class="panel-heading">
+                    <button type="submit" class="btn btn-danger" id="add_btn">添加</button> 超火的电影o
+                </div>
+
+                <div class="form-group">
+                    <label>图片</label>
+                    <input class="form-control" name="moviesLogo" type="file">
+
+                </div>
+                <div class="form-group">
+                    <label>电影名</label>
+                    <input name="moviesName" class="form-control" type="text">
+
+                </div>
+                <div class="form-group">
+                    <label>观众评 </label>
+                    <input name="moviesreview" class="form-control" type="text">
+
+                </div>
+                <div class="form-group">
+                    <label>主演 </label>
+                    <input name="actors" class="form-control" type="text">
+
+                </div>
+                <div class="form-group">
+                    <label>今日播放 </label>
+                    <input name="moviestime" class="form-control" type="text">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

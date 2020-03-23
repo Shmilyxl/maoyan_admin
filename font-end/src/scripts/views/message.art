@@ -1,0 +1,47 @@
+<div class="row">
+    <div id=""></div>
+    <div class="col-md-12">
+        <div class="panel panel-success"></div>
+        <div class="panel-heading">
+            chat
+        </div>
+        <div class="panel-body" style="padding: 0px;">
+            <div class="chat-widget-main" id="content" name="name">
+                <div class="chat-widget-left">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+                <div class="chat-widget-name-left">
+                    <h4>Amanna Seiar</h4>
+                </div>
+                <div class="chat-widget-right">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+                <div class="chat-widget-name-right">
+                    <h4>Donim Cruseia </h4>
+                </div>
+                <div class="chat-widget-left">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+                <div class="chat-widget-name-left">
+                    <h4>Amanna Seiar</h4>
+                </div>
+                <div class="chat-widget-right">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+                <div class="chat-widget-name-right">
+                    <h4>Donim Cruseia </h4>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <div class="input-group">
+                <input type="text" id="msg" class="form-control" placeholder="Enter Message" />
+                <span class="input-group-btn">
+                             <button id="submit" class="btn btn-success" type="button">SEND</button>
+                         </span>
+            </div>
+        </div>
+    </div>
+
+
+</div>

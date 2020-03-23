@@ -1,0 +1,11 @@
+<h3> {{title.title}}}</h3>
+<hr />
+<ol class="breadcrumb">
+    <li>
+        <a href="#">{{ Breadcrumb.level1}}</a>
+    </li>
+    <li>
+        <a href="#">{{ Breadcrumb.level2}}</a>
+    </li>
+
+</ol>

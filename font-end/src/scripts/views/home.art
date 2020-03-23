@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-md-16">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h1>欢迎光临猫眼
+                    <small>管理系统</small>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-16">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                项目介绍
+            </div>
+            <div class="panel-body">
+                <pre>
+                    猫眼电影管理系统前端：
+                    gulp + sem-router + art-template + jQuery + admin-lte
+                </pre>
+                <p class="lead">This is an example of lead body copy.</p>
+                <p>This is an example of standard paragraph text. This is an example of <a href="#">link anchor text</a> within body copy.</p>
+                <p>
+                    <small>This is an example of small, fine print text.</small>
+                </p>
+                <p>
+                    <strong>This is an example of strong, bold text.</strong>
+                </p>
+                <p>
+                    <em>This is an example of emphasized, italic text.</em>
+                </p>
+                <br />
+                <h4>Alignment Helpers</h4>
+                <p class="text-left">Left aligned text.</p>
+                <p class="text-center">Center aligned text.</p>
+                <p class="text-right">Right aligned text.</p>
+            </div>
+        </div>
+    </div>
