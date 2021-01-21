@@ -24,7 +24,7 @@
         "art-template-loader": "^1.4.3",
         "lodash": "^4.17.15",
         "sme-router": "^0.12.8",
-        "socket.io": "^2.3.0",
+        "socket.io": "^2.4.0",
         "string-loader": "0.0.1",
         "zepto": "^1.2.0"
     }
